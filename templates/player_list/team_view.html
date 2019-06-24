@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+<div id="team-container">
+    <div id="table-container" class="container">
+
+        <br>
+        <br>
+        <br>
+
+        <h2 class="table_heading" style="text-align: center">
+            <a href="{% url 'p_list' %}">
+                <img src="https://fontmeme.com/permalink/190620/3bddb4db4a6dd969ed5fbd088e9886da.png"
+                    alt="starcraft-font" border="0"></a>
+
+            <b> / </b>
+
+            <img src="https://fontmeme.com/permalink/190620/20d572ff6e2fc2aa71c9b34d7c158b23.png" alt="starcraft-font"
+                border="0"></a>
+        </h2>
+
+        <br>
+        <br>
+
+        <a href="{% url 'p_add' %}" class="btn btn-primary add_item">Add Player</a>
+
+        <br>
+        <br>
+        <br>
+
+        <div id="t_table" class="list_table">
+            {% if team_list %}
+            {% for k, v in team_list.items %}
+            <h1 style="color:white;">{{ k }}</h1>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr class="table_header">
+                        <th class="table_head name_section" scope="col">Name</th>
+                        <th class="table_head ign_section" scope="col">InGame ID</th>
+                        <th class="table_head race_section" scope="col">Race</th>
+                        <th class="table_head country_section" scope="col">Country</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for p in v %}
+                    <tr>
+                        <td class="name_section">
+                            <font color="#ffffff"><b>{{ p.fname }} {{ p.lname }}</b></font>
+                        </td>
+                        <td class="ign_section">
+                            <font color="#ffffff"><b>{{ p.ingame_name }}</b></font>
+                        </td>
+                        <td class="race_section">
+                            <font color="#ffffff"><b>{{ p.race }}</b></font>
+                        </td>
+                        <td class="country_section">
+                            <font color="#ffffff"><b>{{ p.country }}</b></font>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% endfor %}
+            {% else %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

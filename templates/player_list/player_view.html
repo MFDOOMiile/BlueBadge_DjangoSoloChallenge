@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+<div id="main-container">
+    <div id="table-container" class="container">
+
+        <br>
+        <br>
+        <br>
+
+        <h2 class="table_heading" style="text-align: center">
+            <img src="https://fontmeme.com/permalink/190620/3bddb4db4a6dd969ed5fbd088e9886da.png" alt="starcraft-font" 
+            border="0">
+            
+            <b> / </b>
+         
+            <a href="{% url 't_list' %}">
+            <img src="https://fontmeme.com/permalink/190620/20d572ff6e2fc2aa71c9b34d7c158b23.png" 
+            alt="starcraft-font" 
+            border="0"></a>
+        </h2>
+
+        <br>
+        <br>
+
+        <a href="{% url 'p_add' %}" class="btn btn-primary add_item">Add Player</a>
+
+        <br>
+        <br>
+        <br>
+
+        <div id="p_table" class="list_table">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr class="table_header">
+                        <th class="table_head" scope="col">Name</th>
+                        <th class="table_head" scope="col">InGame ID</th>
+                        <th class="table_head" scope="col">Race</th>
+                        <th class="table_head" scope="col">Team</th>
+                        <th class="table_head" scope="col">Country</th>                      
+                        <th class="table_head" scope="col" style="text-align:right;">Edit</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% if player_list %}
+                    {% for p in player_list %}
+
+                    <tr>
+                        <td><font color="#ffffff"><b>{{ p.fname }} {{ p.lname }}</b></font></td>
+                        <td><font color="#ffffff"><b>{{ p.ingame_name }}</b></font></td>
+                        <td><font color="#ffffff"><b>{{ p.race }}</b></font></td>
+                        <td><font color="#ffffff"><b>{{ p.team }}</b></font></td>
+                        <td><font color="#ffffff"><b>{{ p.country }}</b></font></td>
+                        <td style="text-align: right;"><a href="{% url 'p_edit' p.id %}"
+                                class="btn btn-primary add_item">Edit</a></td>
+                    </tr>
+
+                    {% endfor %}
+
+                    {% else %}
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

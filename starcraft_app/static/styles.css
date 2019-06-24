@@ -1,0 +1,202 @@
+body {
+    height: 100vs;
+}
+
+#mycontent {
+    margin-bottom: 54px;
+} 
+
+#site-footer {
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    text-align: center;
+    color: white
+}
+
+.my_brand {
+    color: silver !important
+}
+
+.my_links {
+    color: silver !important
+}
+
+#main-container {
+    background: url("img\\rxXhHYr.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+#team-container {
+    background: url("img\\rxXhHYr.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+#add-container {
+    background: url("img\\addplayer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#edit-container {
+    background: url("img\\protoss.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#delete-container {
+    background: url("img\\protoss.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.add_form {
+    margin: 0 auto;
+}
+
+.form_group {
+    margin: 0 auto !important;
+}
+
+#p_table {
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    padding-bottom: 88px;
+}
+
+#t_table {
+    
+    font-size: 18px;
+    padding-bottom: 88px;
+}
+
+.table {
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.name_section {
+    width: 30%;
+}
+
+.ign_section {
+    width: 25%;
+}
+
+.country_section {
+    width: 25%;
+}
+
+.race_section {
+    width: 20%;
+}
+
+
+#add_box {
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 18px; 
+}
+
+/* #confirm_table {
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    margin-left: 30%;
+    margin-right: 30%;
+} */
+
+#box {
+padding: auto;
+
+}
+
+
+.center_auto {
+    margin: 0 auto;
+}
+
+.testing {
+    margin: 0 auto !important;
+}
+
+
+.carousel { 
+    z-index: -99;
+}
+
+.carousel .item {
+    position: fixed; 
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+
+}
+.carousel-inner {
+    height: 100%;
+}
+
+#carouselExampleFade {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+.carousel-item {
+    height: 100%;
+    width: 100%;
+}
+
+.car_img_1 {
+    background: url('./img/zergwhite.jpg') no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.car_img_2 {
+    background: url('./img/protosswhite.jpg') no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.car_img_3 {
+    background: url('./img/terranwhitetwo.jpg') no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+#info-container {
+    max-width: 100%;
+    max-height: 100%;
+    width: 80%;
+    height: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 10000px #000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}

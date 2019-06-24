@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+    <div id="add-container">
+        <div id="add-table-container">
+
+            <br>
+            <br>
+            <br>
+
+            <h2 class="table_heading" style="text-align: center"><img src="https://fontmeme.com/permalink/190618/a68e9d342b919c1786356927c1e470bc.png" alt="starcraft-font" border="0"></a></h2>
+
+            <br>
+            <br>
+
+            <div id="box" class="container">
+                <form class="add_form" action="{% url 'p_add' %}" method="POST">
+                    {% csrf_token %}
+                    <a class="btn btn-info" href="{% url 'p_list' %}">Go Back</a>
+
+                    <br>
+                    <br>
+
+                    <div id="boxtwo" class="container">
+                        <div class="center_auto form-group w-50">
+                            <label for="fname"><img src="https://fontmeme.com/permalink/190619/a13e11b91f8aebe09cccc856c9f9d4e8.png" alt="starcraft-font" border="0"></a></label>
+                            <input name="fname" type="text" class="form-control">
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <div class="center_auto form-group w-50">
+                            <label for="lname"><img src="https://fontmeme.com/permalink/190619/4590fb6be2096ae81ad5c2efe0ce2ff7.png" alt="starcraft-font" border="0"></a></label>
+                            <input name="lname" type="text" class="form-control">
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <div class="center_auto form-group w-50">
+                            <label for="ingame_name"><img src="https://fontmeme.com/permalink/190619/b79f8a566a0be3633bc5ffeaa9e816d1.png" alt="starcraft-font" border="0"></a></label>
+                            <input name="ingame_name" type="text" class="form-control">
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <div class="center_auto form-group w-50">
+                            <label for="country"><img src="https://fontmeme.com/permalink/190619/4fd26fa39e4116e1b67269a1831fd3df.png" alt="starcraft-font" border="0"></a></label>
+                            <input name="country" type="text" class="form-control">
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <div class="center_auto form-group w-50">
+                            <label for="team"><img src="https://fontmeme.com/permalink/190619/1bb9126ebdc7c19b15e77c5e67a6ec0f.png" alt="starcraft-font" border="0"></a></label>
+                            <input name="team" type="text" class="form-control">
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <div class="center_auto form-group w-50">
+                            <label for="race"><img src="https://fontmeme.com/permalink/190619/b480daa790c4925240e3dd445f50c9fd.png" alt="starcraft-font" border="0"></a></label>
+                            <input name="race" type="text" class="form-control">
+                        </div>
+
+                        <br>
+                    </div>
+
+                    <br>
+
+                    <div class="form-group text-center">
+                        <input type="submit" class="btn btn-success form_submit" style="text-align: right;">
+                    </div>
+
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div id = "delete-container">
+    
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div id="confirm_table">
+            <div class="container" style="text-align: center">
+                <a href="https://fontmeme.com/starcraft-font/"><img src="https://fontmeme.com/permalink/190619/906cf9cc562503468d439913950e1a75.png" alt="starcraft-font" border="0"></a>
+
+                <br>
+                <br>
+
+                <a href="{% url 'p_delete' id %}" class="btn btn-danger">Delete</a>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                <a href="{% url 'p_edit' id %}" class="btn btn-primary">Cancel</a>
+            </div>      
+        </div>
+    </div>
+
+{% endblock content %}
