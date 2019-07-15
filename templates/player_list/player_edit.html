@@ -8,75 +8,65 @@
 
             <br>
             <br>
-            <br>
 
-            <h2 class="table_heading" style="text-align: center"><img src="https://fontmeme.com/permalink/190620/a68825146f127388c41fcd94bbb7144a.png" alt="starcraft-font" border="0"></h2>
-
-            <br>
-            <br>
+            <h2 class="table_heading" style="text-align: center"><img src="https://fontmeme.com/permalink/190714/07496dd51a882c532ae8fa712f9d6d3d.png" alt="starcraft-font" border="0"></h2>
 
             <div id="editbox" class="container">
                 <form id="edit_form" action={% url 'p_edit' p.id %} method="POST">
                     {% csrf_token %}
-                    <a class="btn btn-info" href="{% url 'p_list' %}">Go Back</a>
-
                     <br>
                     <br>
 
                     <div class="center_auto form-group w-50">
-                        <label for="fname"><img src="https://fontmeme.com/permalink/190619/b7f5622a30afd12e3e5d0e01606415b9.png" alt="starcraft-font" border="0"></a></label>
+                        <label for="fname"><img src="https://fontmeme.com/permalink/190714/32e3d317c6f7916cb07657a38d02e1f9.png" alt="starcraft-font" border="0"></label>
                         <input name="fname" type="text" placeholder="{{ p.fname }}"  class="form-control">
                     </div>
 
                     <br>
 
                     <div class="center_auto form-group w-50">
-                        <label for="lname"><img src="https://fontmeme.com/permalink/190619/8039733843d3614a7fd49e0f2697bc49.png" alt="starcraft-font" border="0"></a></label>
+                        <label for="lname"><img src="https://fontmeme.com/permalink/190714/259adaa3ce332e1ffd01c1894a6f5e6e.png" alt="starcraft-font" border="0"></label>
                         <input name="lname" type="text" placeholder="{{ p.lname }}" class="form-control">
                     </div>
 
                     <br>
 
                     <div class="center_auto form-group w-50">
-                        <label for="ingame_name"><img src="https://fontmeme.com/permalink/190619/237a0d5f7bd854fae17fed97bc9ef2b9.png" alt="starcraft-font" border="0"></a></label>
+                        <label for="ingame_name"><img src="https://fontmeme.com/permalink/190714/64ca4388e39d1f2c3a6077d1fc2d1e50.png" alt="starcraft-font" border="0"></label>
                         <input name="ingame_name" type="text" placeholder="{{ p.ingame_name }}" class="form-control">
                     </div>
 
                     <br>
 
                     <div class="center_auto form-group w-50">
-                        <label for="country"><img src="https://fontmeme.com/permalink/190619/82a26538e32c59bb8cbf519e045b5362.png" alt="starcraft-font" border="0"></a></label>
-                        <input name="country" type="text" placeholder="{{ p.country }}" class="form-control">
+                        <label for="race"><img src="https://fontmeme.com/permalink/190714/2fb0368cfa9c2ab80b2baf267a384e96.png" alt="starcraft-font" border="0"></label>
+                        <input name="race" type="text" placeholder="{{ p.race }}" class="form-control">
                     </div>
 
                     <br>
 
                     <div class="center_auto form-group w-50">
-                        <label for="team"><img src="https://fontmeme.com/permalink/190619/1bb9126ebdc7c19b15e77c5e67a6ec0f.png" alt="starcraft-font" border="0"></a></label>
+                        <label for="team"><img src="https://fontmeme.com/permalink/190714/1d1f331e84f3bfd75a17a1aa7b7a4ac8.png" alt="starcraft-font" border="0"></label>
                         <input name="team" type="text" placeholder="{{ p.team }}" class="form-control">
                     </div>
 
                     <br>
 
                     <div class="center_auto form-group w-50">
-                        <label for="race"><img src="https://fontmeme.com/permalink/190619/b480daa790c4925240e3dd445f50c9fd.png" alt="starcraft-font" border="0"></a></label>
-                        <input name="race" type="text" placeholder="{{ p.race }}" class="form-control">
+                        <label for="country"><img src="https://fontmeme.com/permalink/190714/6ed688ea634b1d053120734b627560f7.png" alt="starcraft-font" border="0"></label>
+                        <input name="country" type="text" placeholder="{{ p.country }}" class="form-control">
                     </div>
 
-                <br>
+                    <br>
+                </form>
 
                 <div class="form-group text-center">
                     <input type="submit" class="btn btn-success form_submit">
                 </div>
 
-                <br>
-                <br>
-
                 <div class="form-group text-center">
                     <a href="{% url 'confirm_delete' p.id %}" class="btn btn-danger">Delete Player</a>
                 </div>
-
-                </form>
             </div>
         </div>
     </div>
